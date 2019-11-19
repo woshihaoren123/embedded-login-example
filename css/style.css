@@ -179,13 +179,12 @@
 	background-color: #fff;
 	padding: 20px;
 	border-radius: 5px;
-	border: 1px solid #e0e5ee;
 	box-shadow: 0 2px 6px rgba(0,0,0,.4);
 	-webkit-box-shadow: 0 2px 6px rgba(0,0,0,.4);
 	-moz-box-shadow: 0 2px 6px rgba(0,0,0,.4)；
 	background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(https://playful-fox-mzmcid-dev-ed--c.visualforce.com/resource/1573109276000/LoginBackgroud);
+        background-position: center;
+        background-image: url(https://playful-fox-mzmcid-dev-ed--c.visualforce.com/resource/1573109276000/LoginBackgroud);
 }
 
 #sfid-links {
