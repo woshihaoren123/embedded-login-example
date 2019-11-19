@@ -24,6 +24,26 @@ button#sfid-login-button:hover {
     font-weight: bolder;
     font-size: 18px;
 }
+div.sfid-content {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://playful-fox-mzmcid-dev-ed--c.visualforce.com/resource/1573109276000/LoginBackgroud);
+}
+div.sfid-selfreg-password {
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+}
+a.sfid-forgot-password {
+    padding-bottom: 10px;
+    float: right;
+}
+a.sfid-self-registration {
+    float: right;
+    clear: both;
+}
 div.index-container {
     width: 100%;
     height: 100%;
