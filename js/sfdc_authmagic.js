@@ -744,6 +744,7 @@ var SFIDWidget = function() {
     return {
         init: function() {
 
+	    debugger;
             SFIDWidget.config = {};
 
             SFIDWidget.config.startURL = location;
@@ -917,6 +918,7 @@ var SFIDWidget = function() {
 
         }, login: function() {
 
+	    debugger;
             if (SFIDWidget.config != null) {
 
                 if (SFIDWidget.config.mode === 'popup') {
