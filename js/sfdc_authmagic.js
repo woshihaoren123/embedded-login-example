@@ -932,6 +932,7 @@ var SFIDWidget = function() {
             }
 
         }, authenticate: function(){
+		debugger;
             hideError();
             document.getElementById("sfid-submit").disabled = true;
             document.getElementById("sfid-submit").className = 'sfid-disabled sfid-wide sfid-mb16';
