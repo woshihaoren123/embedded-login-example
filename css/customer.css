@@ -4,31 +4,31 @@
 	float: left;
 	background: url('https://test.salesforce.com/icons/facebook-white.png');
 	background-size: cover;
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 }
 
-[id="sfid-button-ap-Log in with Google"] button:before {
+[id="sfid-button-ap-Sign in with Google"] button:before {
 	content: '';
 	display: block;
 	float: left;
 	background: url('https://test.salesforce.com/icons/google-white.png');
 	background-size: cover;
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 }
 
 [id="sfid-button-ap-Log in with Facebook"] button {
-	color: #FFFFFF;
-	background-color: #3b5998;
+	color: #FFFFFF!important;
+	background-color: #3b5998!important;
 }
 
 [id="sfid-button-ap-Log in with Google"] button {
-	color: #FFFFFF;
-	background-color: #4285fe;
+	color: #FFFFFF!important;
+	background-color: #4285fe!important;
 }
 
 #sfid-forgot-password {
-	float: right;
-	color: #02e1be;
+	float: right!important;
+	color: #02e1be!important;
 }
