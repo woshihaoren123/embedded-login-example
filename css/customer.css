@@ -21,11 +21,13 @@
 [id="sfid-button-ap-Log in with Facebook"] button {
 	color: #FFFFFF!important;
 	background-color: #3b5998!important;
+	border-color: #3b5998!important;
 }
 
 [id="sfid-button-ap-Sign in with Google"] button {
 	color: #FFFFFF!important;
 	background-color: #4285fe!important;
+	border-color: #4285fe!important;
 }
 
 #sfid-forgot-password {
@@ -35,4 +37,18 @@
 
 #sfid-submit {
 	background-color: #02e1be!important;
+}
+
+#sfid-username {
+	BORDER-TOP-STYLE: none;
+	BORDER-RIGHT-STYLE: none; 
+	BORDER-LEFT-STYLE: none; 
+	BORDER-BOTTOM-STYLE:solid;
+}
+
+#sfid-password {
+	BORDER-TOP-STYLE: none;
+	BORDER-RIGHT-STYLE: none; 
+	BORDER-LEFT-STYLE: none; 
+	BORDER-BOTTOM-STYLE:solid;
 }
