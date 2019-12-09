@@ -23,7 +23,7 @@
 	background-color: #3b5998!important;
 }
 
-[id="sfid-button-ap-Log in with Google"] button {
+[id="sfid-button-ap-Sign in with Google"] button {
 	color: #FFFFFF!important;
 	background-color: #4285fe!important;
 }
@@ -31,4 +31,8 @@
 #sfid-forgot-password {
 	float: right!important;
 	color: #02e1be!important;
+}
+
+#sfid-submit {
+	background-color: #02e1be!important;
 }
