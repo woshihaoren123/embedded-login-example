@@ -166,7 +166,7 @@ var SFIDWidget = function() {
 
                 logowrapper.appendChild(img);
                 var dialogTitle = document.createElement('h2');
-                dialogTitle.id = "dialogTitle11111111111111111111111111";
+                dialogTitle.id = "dialogTitle";
                 var textNode = document.createTextNode("Salesforce Login");
                 dialogTitle.appendChild(textNode);
                 content.setAttribute("role", "dialog");
@@ -196,6 +196,8 @@ var SFIDWidget = function() {
             un.type = "text";
             un.name = "username";
             un.id = "sfid-username";
+	    // customer add 
+	    un.placeholder = "Email Address/ Mobile Number";
             un.setAttribute("autofocus", "autofocus");
             
             var labelEmail = document.createElement("LABEL");
