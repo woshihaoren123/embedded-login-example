@@ -249,19 +249,7 @@ var SFIDWidget = function() {
             divForgotPswdSelfReg.appendChild(fp);
         }
 
-        // Add self reg is communities pref is enabled and meta tag present and true
-        if(SFIDWidget.authconfig.LoginPage.SelfRegistrationEnabled && (SFIDWidget.config.selfRegistrationEnabled === "true")) {
-            var sr = document.createElement('a');
-            sr.id = 'sfid-self-registration';
-            var urlCheck = addExpIdToUrl(addLocaleToUrl(SFIDWidget.authconfig.LoginPage.SelfRegistrationUrl));
-            sr.href = addStartURLToUrl(urlCheck);
-            sr.text = "Not a member?";
-            divForgotPswdSelfReg.appendChild(sr);
-        }
-
-        if( divForgotPswdSelfReg.children.length > 0) {
-            content.appendChild(divForgotPswdSelfReg);
-        }
+        
 
         var isUsernamePassEnabled = SFIDWidget.authconfig.LoginPage.UsernamePasswordEnabled;
         var numOfAuthProv = SFIDWidget.authconfig.AuthProviders.length;
@@ -269,10 +257,13 @@ var SFIDWidget = function() {
 
         if ((isUsernamePassEnabled) && ((numOfAuthProv > 0) || (numOfSamlProv > 0))) {
 
-        	var orloginwithspace = document.createElement("br");
+            var orloginwithspace = document.createElement("br");
+	    // customer add
+	    var line = document.createElement("span");
+	    line.className = "text-line";
             var orloginwith = document.createElement("p"); 
             orloginwith.className = "sfid-small";
-            orloginwith.innerHTML = "or log in using";
+            orloginwith.innerHTML = "Or";
             content.appendChild(orloginwithspace);
             content.appendChild(orloginwith);
 
@@ -282,6 +273,22 @@ var SFIDWidget = function() {
             orloginwith.className = "sfid-small sfid-mb16";
             orloginwith.innerHTML = "Choose an authentication provider.";
             content.appendChild(orloginwith);
+        }
+	    
+	// Add self reg is communities pref is enabled and meta tag present and true
+        if(SFIDWidget.authconfig.LoginPage.SelfRegistrationEnabled && (SFIDWidget.config.selfRegistrationEnabled === "true")) {
+            var srdiv = document.createElement('div');
+	    var sr = document.createElement('a');
+            sr.id = 'sfid-self-registration';
+            var urlCheck = addExpIdToUrl(addLocaleToUrl(SFIDWidget.authconfig.LoginPage.SelfRegistrationUrl));
+            sr.href = addStartURLToUrl(urlCheck);
+            sr.text = "Register Now";
+	    srdiv.appendChild(sc);
+            content.appendChild(srdiv);
+        }
+
+        if( divForgotPswdSelfReg.children.length > 0) {
+            content.appendChild(divForgotPswdSelfReg);
         }
 
         if (SFIDWidget.authconfig.AuthProviders.length > 0) {
