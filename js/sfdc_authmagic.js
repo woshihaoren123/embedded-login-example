@@ -283,7 +283,7 @@ var SFIDWidget = function() {
             var urlCheck = addExpIdToUrl(addLocaleToUrl(SFIDWidget.authconfig.LoginPage.SelfRegistrationUrl));
             sr.href = addStartURLToUrl(urlCheck);
             sr.text = "Register Now";
-	    srdiv.appendChild(sc);
+	    srdiv.appendChild(sr);
             content.appendChild(srdiv);
         }
 
