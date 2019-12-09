@@ -248,6 +248,9 @@ var SFIDWidget = function() {
             fp.text = "Forgot your password?";
             divForgotPswdSelfReg.appendChild(fp);
         }
+	if( divForgotPswdSelfReg.children.length > 0) {
+            content.appendChild(divForgotPswdSelfReg);
+        }
 
         
 
@@ -287,9 +290,7 @@ var SFIDWidget = function() {
             content.appendChild(srdiv);
         }
 
-        if( divForgotPswdSelfReg.children.length > 0) {
-            content.appendChild(divForgotPswdSelfReg);
-        }
+        
 
         if (SFIDWidget.authconfig.AuthProviders.length > 0) {
 
