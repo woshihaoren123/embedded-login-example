@@ -1,0 +1,34 @@
+[id="sfid-button-ap-Log in with Facebook"] button:before {
+	content: '';
+	display: block;
+	float: left;
+	background: url('https://test.salesforce.com/icons/facebook-white.png');
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+[id="sfid-button-ap-Log in with Google"] button:before {
+	content: '';
+	display: block;
+	float: left;
+	background: url('https://test.salesforce.com/icons/google-white.png');
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+[id="sfid-button-ap-Log in with Facebook"] button {
+	color: #FFFFFF;
+	background-color: #3b5998;
+}
+
+[id="sfid-button-ap-Log in with Google"] button {
+	color: #FFFFFF;
+	background-color: #4285fe;
+}
+
+#sfid-forgot-password {
+	float: right;
+	color: #02e1be;
+}
