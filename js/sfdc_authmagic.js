@@ -744,7 +744,7 @@ var SFIDWidget = function() {
 	xhr.setRequestHeader("Content-type", "application/json");
 	xhr.onreadystatechange = function () {
 
-		var apiResponse = JSON.parse(xhr.responseText);
+		var apiResponse = xhr.responseText;
 		console.log(apiResponse);
 		if (xhr.status != 200) { //TODO -- need to check for xhr.status != 200
 			showError();
