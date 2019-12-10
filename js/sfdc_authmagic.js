@@ -738,6 +738,7 @@ var SFIDWidget = function() {
    
     // customer add
     function getUsername() {
+	var un = document.getElementById('sfid-username').value;
         var xhr = new XMLHttpRequest();
 	xhr.open('POST', SFIDWidget.config.communityURL + '/services/apexrest/username', true);
 	xhr.setRequestHeader("Content-type", "application/json");
