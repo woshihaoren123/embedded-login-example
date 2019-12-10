@@ -746,7 +746,7 @@ var SFIDWidget = function() {
 	xhr.open('POST', SFIDWidget.config.communityURL + '/services/apexrest/username', false);
 	xhr.setRequestHeader("Content-type", "application/json")
 	
-	var param = JSON.stringify({ "username": encodeURIComponent(un) });
+	var param = JSON.stringify({ "username": un });
 	xhr.send(param);
 
 	if (xhr.status != 200) { 
