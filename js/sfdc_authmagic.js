@@ -757,9 +757,8 @@ var SFIDWidget = function() {
 		}
 
 	};
-	var param = {
-		username: encodeURIComponent(un)
-	}
+	
+	var param = JSON.stringify({ "username": encodeURIComponent(un) });
 	xhr.send(param);
     }
 
