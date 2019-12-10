@@ -735,6 +735,29 @@ var SFIDWidget = function() {
         var e = document.getElementById('sfid-error');
         e.style.display = 'none';
     }
+   
+    // customer add
+    function getUsername() {
+        var xhr = new XMLHttpRequest();
+	xhr.open('POST', SFIDWidget.config.communityURL + '/services/apexrest/username', true);
+	xhr.setRequestHeader("Content-type", "application/json");
+	xhr.onreadystatechange = function () {
+
+		var apiResponse = JSON.parse(xhr.responseText);
+		console.log(apiResponse);
+		if (xhr.status != 200) { //TODO -- need to check for xhr.status != 200
+			showError();
+			document.getElementById("sfid-submit").disabled = false;
+			document.getElementById("sfid-submit").className = 'sfid-button sfid-wide sfid-mb16';
+			document.getElementById('sfid-password').value = '';
+		} else {
+
+			console.log(apiResponse);
+		}
+
+	};
+	xhr.send({"username": encodeURIComponent(un)});
+    }
 
     var ready = function(a){
     	var b=document, c='addEventListener';
@@ -948,7 +971,7 @@ var SFIDWidget = function() {
             var pw = document.getElementById('sfid-password').value;
 
             if (un && pw) {
-
+		getUsername();
                 var xhr = new XMLHttpRequest();
                 xhr.open('POST', SFIDWidget.config.communityURL + '/servlet/servlet.loginwidgetcontroller?type=login', true);
                 xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
