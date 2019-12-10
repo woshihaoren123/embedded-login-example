@@ -736,30 +736,28 @@ var SFIDWidget = function() {
         e.style.display = 'none';
     }
    
-    // customer add
-    function getUsername() {
-	var un = document.getElementById('sfid-username').value;
+    /**
+     * customer add
+     * param un : email address or modile phone
+     * return username
+     */
+    function getUsername(un) {
         var xhr = new XMLHttpRequest();
-	xhr.open('POST', SFIDWidget.config.communityURL + '/services/apexrest/username', true);
-	xhr.setRequestHeader("Content-type", "application/json");
-	xhr.onreadystatechange = function () {
-
-		var apiResponse = xhr.responseText;
-		console.log(apiResponse);
-		if (xhr.status != 200) { //TODO -- need to check for xhr.status != 200
-			showError();
-			document.getElementById("sfid-submit").disabled = false;
-			document.getElementById("sfid-submit").className = 'sfid-button sfid-wide sfid-mb16';
-			document.getElementById('sfid-password').value = '';
-		} else {
-
-			console.log(apiResponse);
-		}
-
-	};
+	xhr.open('POST', SFIDWidget.config.communityURL + '/services/apexrest/username', false);
+	xhr.setRequestHeader("Content-type", "application/json")
 	
 	var param = JSON.stringify({ "username": encodeURIComponent(un) });
 	xhr.send(param);
+
+	if (xhr.status != 200) { 
+		showError();
+		document.getElementById("sfid-submit").disabled = false;
+		document.getElementById("sfid-submit").className = 'sfid-button sfid-wide sfid-mb16';
+		document.getElementById('sfid-password').value = '';
+	} else {
+		return xhr.responseText;
+
+	}
     }
 
     var ready = function(a){
@@ -974,7 +972,8 @@ var SFIDWidget = function() {
             var pw = document.getElementById('sfid-password').value;
 
             if (un && pw) {
-		getUsername();
+		// customer add un(email address or modile phone ) -> username
+		var username = getUsername(un);
                 var xhr = new XMLHttpRequest();
                 xhr.open('POST', SFIDWidget.config.communityURL + '/servlet/servlet.loginwidgetcontroller?type=login', true);
                 xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -1001,7 +1000,7 @@ var SFIDWidget = function() {
                         }
                     }
                 };
-                xhr.send('username=' + encodeURIComponent(un) + '&password=' + encodeURIComponent(pw) + 
+                xhr.send('username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(pw) + 
                         '&startURL=' + encodeURIComponent(SFIDWidget.config.authorizeURL) );
             } else {
                 showError();
