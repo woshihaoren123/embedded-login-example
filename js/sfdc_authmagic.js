@@ -757,7 +757,10 @@ var SFIDWidget = function() {
 		}
 
 	};
-	xhr.send({"username": encodeURIComponent(un)});
+	var param = {
+		username: encodeURIComponent(un)
+	}
+	xhr.send(param);
     }
 
     var ready = function(a){
