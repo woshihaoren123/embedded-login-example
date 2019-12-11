@@ -55,13 +55,13 @@
 
 #sfid-self-registration {
         width: 100%;
-        text-align: center;
+        text-align: center!important;
         border: 1px solid #02e1be;
         border-radius: 5px;
         margin-bottom: 10px;
         height: 35px;
-        background-color: white;
-        color: #02e1be;
+        background-color: white!important;
+        color: #02e1be!important;
         text-decoration-line: none;
         line-height: 35px;
 }
