@@ -730,7 +730,7 @@ var SFIDWidget = function() {
 
     function showError() {
         var e = document.getElementById('sfid-error');
-        e.style.display = 'inline';
+        e.style.display = 'block';
     }
 
     function hideError() {
