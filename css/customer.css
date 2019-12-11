@@ -76,18 +76,18 @@
         text-align: center;
 }
 
-#text-line:before, .text-line:after {
+#text-line:before, #text-line:after {
         content: '';                 
         position: absolute;         
         top: 52%;
         background: #54698d;       
-        width: 20%;
-        height: 2px;
+        width: 45%;
+        height: 1px;
 }
 
 #text-line:before{
-        left: 25%;        
+        left: 0%;        
 }
 #text-line:after {
-        right: 25%;
+        right: 0%;
 }
