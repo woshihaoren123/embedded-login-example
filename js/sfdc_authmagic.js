@@ -268,7 +268,9 @@ var SFIDWidget = function() {
             orloginwith.className = "sfid-small";
             orloginwith.innerHTML = "Or";
             content.appendChild(orloginwithspace);
+	    content.appendChild(line);
             content.appendChild(orloginwith);
+	    content.appendChild(line);
 
         } else if ((!isUsernamePassEnabled) && ((numOfAuthProv > 0) || (numOfSamlProv > 0))) {
 
