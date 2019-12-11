@@ -33,6 +33,7 @@
 #sfid-forgot-password {
 	float: right!important;
 	color: #02e1be!important;
+	text-decoration-line: none;
 }
 
 #sfid-submit {
