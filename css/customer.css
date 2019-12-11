@@ -46,8 +46,8 @@
 }
 
 #sfid-username {
-	border-radius: 0;
-	background-color: white;
+	border-radius: 0!important;
+	background-color: white!important;
 	BORDER-TOP-STYLE: none!important;
 	BORDER-RIGHT-STYLE: none!important; 
 	BORDER-LEFT-STYLE: none!important; 
@@ -55,8 +55,8 @@
 }
 
 #sfid-password {
-	border-radius: 0;
-	background-color: white;
+	border-radius: 0!important;
+	background-color: white!important;
 	BORDER-TOP-STYLE: none!important;
 	BORDER-RIGHT-STYLE: none!important; 
 	BORDER-LEFT-STYLE: none!important; 
