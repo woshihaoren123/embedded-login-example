@@ -261,16 +261,12 @@ var SFIDWidget = function() {
         if ((isUsernamePassEnabled) && ((numOfAuthProv > 0) || (numOfSamlProv > 0))) {
 
             var orloginwithspace = document.createElement("br");
-	    // customer add
-	    var line = document.createElement("span");
-	    line.className = "text-line";
-            var orloginwith = document.createElement("p"); 
+            var orloginwith = document.createElement("div"); 
             orloginwith.className = "sfid-small";
             orloginwith.innerHTML = "Or";
+	    orloginwith.id = "text-line";
             content.appendChild(orloginwithspace);
-	    content.appendChild(line);
             content.appendChild(orloginwith);
-	    content.appendChild(line);
 
         } else if ((!isUsernamePassEnabled) && ((numOfAuthProv > 0) || (numOfSamlProv > 0))) {
 
