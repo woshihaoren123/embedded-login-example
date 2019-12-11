@@ -52,3 +52,20 @@
 	BORDER-LEFT-STYLE: none; 
 	BORDER-BOTTOM-STYLE:solid;
 }
+
+#sfid-self-registration {
+        width: 100%;
+        text-align: center;
+        border: 1px solid #02e1be;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        height: 35px;
+        background-color: white;
+        color: #02e1be;
+        text-decoration-line: none;
+        line-height: 35px;
+}
+
+#sfid-error {
+	width: 288px;
+}
