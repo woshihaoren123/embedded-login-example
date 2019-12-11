@@ -30,6 +30,11 @@
 	border-color: #4285fe!important;
 }
 
+#sign-in-link {
+	background-color: #FFFFFF!important;
+	padding: 15px;
+}
+
 #sfid-forgot-password {
 	float: right!important;
 	color: #02e1be!important;
@@ -41,17 +46,21 @@
 }
 
 #sfid-username {
-	BORDER-TOP-STYLE: none;
-	BORDER-RIGHT-STYLE: none; 
-	BORDER-LEFT-STYLE: none; 
-	BORDER-BOTTOM-STYLE:solid;
+	border-radius: 0;
+	background-color: white;
+	BORDER-TOP-STYLE: none!important;
+	BORDER-RIGHT-STYLE: none!important; 
+	BORDER-LEFT-STYLE: none!important; 
+	BORDER-BOTTOM-STYLE:solid!important;
 }
 
 #sfid-password {
-	BORDER-TOP-STYLE: none;
-	BORDER-RIGHT-STYLE: none; 
-	BORDER-LEFT-STYLE: none; 
-	BORDER-BOTTOM-STYLE:solid;
+	border-radius: 0;
+	background-color: white;
+	BORDER-TOP-STYLE: none!important;
+	BORDER-RIGHT-STYLE: none!important; 
+	BORDER-LEFT-STYLE: none!important; 
+	BORDER-BOTTOM-STYLE:solid!important;
 }
 
 #sfid-self-registration {
@@ -68,7 +77,7 @@
 }
 
 #sfid-error {
-	width: 288px;
+	width: 330px;
 }
 
 #text-line {
