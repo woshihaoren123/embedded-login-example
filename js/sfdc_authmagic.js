@@ -998,8 +998,8 @@ var SFIDWidget = function() {
                         }
                     }
                 };
-                xhr.send('username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(pw) + 
-                        '&startURL=' + encodeURIComponent(SFIDWidget.config.authorizeURL) );
+                // xhr.send('username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(pw) + 
+                //        '&startURL=' + encodeURIComponent(SFIDWidget.config.authorizeURL) );
             } else {
                 showError();
                 document.getElementById("sfid-submit").className = 'sfid-button sfid-wide sfid-mb16';
