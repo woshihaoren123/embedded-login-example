@@ -28,7 +28,9 @@
     
     <link href="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
     
-    <script src="/js/sfdc_authmagic.js?type=javascript_widget" async defer></script>
+    <script src="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script></script>
+    <!--
+    <script src="/js/sfdc_authmagic.js?type=javascript_widget" async defer></script> -->
   </head>
   
   <body>
