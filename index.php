@@ -134,6 +134,7 @@
 	
 	<script>
 
+	document.cookie = 'SameSite=None; Secure'
 
 	function onLogin(identity) {
 
