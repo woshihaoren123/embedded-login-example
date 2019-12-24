@@ -31,6 +31,9 @@
     <script src="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script></script>
     <!--
     <script src="/js/sfdc_authmagic.js?type=javascript_widget" async defer></script> -->
+	<script>
+		document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+	</script>
   </head>
   
   <body>
@@ -133,8 +136,6 @@
 
 	
 	<script>
-
-	document.cookie = 'SameSite=None; Secure'
 
 	function onLogin(identity) {
 
