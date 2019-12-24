@@ -32,6 +32,7 @@
     <!--
     <script src="/js/sfdc_authmagic.js?type=javascript_widget" async defer></script> -->
 	<script>
+		document.cookie = 'same-site-cookie=foo; SameSite=Lax';
 		document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
 	</script>
   </head>
