@@ -9,6 +9,8 @@
 	<script>
     console.log('123');
 		console.log(sessionStorage.getItem("language"));
+		window.parent.postMessage(sessionStorage.getItem("language"), "https://dev1-member-portal.cs114.force.com/memberportal/s/login/?language=en_US");
 	</script>
   </head>
+
 </html>
