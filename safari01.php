@@ -35,7 +35,7 @@
         <li>
           <h3 class="product-name">AeroPress Coffee Maker</h3>
           <div class="product-button"><a id="aero_link" class="btn btn-hot" href="#" onclick="setItem()">Set Session Storage</a></div>
-		<div class="product-button"><a id="aero_link" class="btn btn-hot" href="#" onclick="setItem()">Set Local Storage</a></div>
+		<div class="product-button"><a id="aero_link" class="btn btn-hot" href="#" onclick="setItem2()">Set Local Storage</a></div>
           <div class="product-button"><a id="aero_link" class="btn btn-hot" href="#" onclick="goto02()">Go</a></div>
         </li>
         
