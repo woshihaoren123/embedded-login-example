@@ -35,6 +35,7 @@
         <li>
           <h3 class="product-name">AeroPress Coffee Maker</h3>
           <div class="product-button"><a id="aero_link" class="btn btn-hot" href="#" onclick="setItem()">Set Session Storage</a></div>
+		<div class="product-button"><a id="aero_link" class="btn btn-hot" href="#" onclick="setItem()">Set Local Storage</a></div>
           <div class="product-button"><a id="aero_link" class="btn btn-hot" href="#" onclick="goto02()">Go</a></div>
         </li>
         
@@ -52,6 +53,10 @@
 function setItem(){
     sessionStorage.setItem("language", "zh_HK");
   }
+	function setItem2(){
+		localStorage.setItem("language", "zh_CN");
+  }	
+		
   
 	function goto02(){
     window.open("https://dev1-member-portal.cs114.force.com/memberportal/s/login/?language=en_US");
